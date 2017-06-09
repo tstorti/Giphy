@@ -6,7 +6,7 @@ $(document).ready(function() {
 		//this function creates a new button and sets a query URL for that button based on search word
 		createBtn: function(word){
 			//create url for api call
-			var queryURL = "http://api.giphy.com/v1/gifs/search?q="+word+"&api_key=dc6zaTOxFJmzC&limit=10";
+			var queryURL = "https://api.giphy.com/v1/gifs/search?q="+word+"&api_key=dc6zaTOxFJmzC&limit=10";
 			//add button to appropriate div in the html
 			$("#btn-target").append("<button class='searchBtn js-getImages' data-url='"+queryURL+"'>"+word+"</button>");
 			//set up click event for new button
